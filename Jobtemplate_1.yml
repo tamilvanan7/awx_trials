@@ -6,7 +6,7 @@
   gather_facts: false
 
   tasks:
-    - name: 
+    - name: "Task 1"
       ansible.tower.tower_organization:
         name: "XYZ"
         description: "Trial Task for Creating Tower Organization"
@@ -15,7 +15,7 @@
         tower_oauthtoken: <deleted>
         validate_certs: false
 
-    - name: 
+    - name: "Task 2"
       ansible.tower.tower_user:
         username: "tamil"
         first_name: "tamilvanan"
@@ -26,7 +26,7 @@
         tower_oauthtoken: <deleted>
         validate_certs: false
 
-    - name: 
+    - name: "Task 3"
       ansible.tower.tower_role:
         organization: "XYZ"
         user: "tamil"
