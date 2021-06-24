@@ -7,7 +7,7 @@
 
   tasks:
     - name: Task 1
-      ansible.tower.tower_organization:
+      awx.awx.tower_organization:
         name: "XYZ"
         description: "Trial Task for Creating Tower Organization"
         state: present
@@ -16,7 +16,7 @@
         validate_certs: false
 
     - name: Task 2
-      ansible.tower.tower_user:
+      awx.awx.tower_user:
         username: "tamil"
         first_name: "tamilvanan"
         last_name: "aabhavanan"
@@ -27,7 +27,7 @@
         validate_certs: false
 
     - name: Task 3
-      ansible.tower.tower_role:
+      awx.awx.tower_role:
         organization: "XYZ"
         user: "tamil"
         role: admin
