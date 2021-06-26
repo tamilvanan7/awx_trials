@@ -7,7 +7,7 @@
 
   tasks:
     - name: Task 1
-      awx.awx.tower_organization:
+      tower_organization:
         name: "XYZ"
         description: "Trial Task for Creating Tower Organization"
         state: present
@@ -16,7 +16,7 @@
         validate_certs: false
 
     - name: Task 2
-      awx.awx.tower_user:
+      tower_user:
         username: "tamil"
         first_name: "tamilvanan"
         last_name: "aabhavanan"
@@ -27,7 +27,7 @@
         validate_certs: false
 
     - name: Task 3
-      awx.awx.tower_role:
+      tower_role:
         organization: "XYZ"
         user: "tamil"
         role: admin
