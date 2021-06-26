@@ -1,0 +1,7 @@
+ - name: Create a new token using username/password
+      tower_token:
+        description: 'Localhost AWX Tower Auth Token'
+        scope: "write"
+        state: present
+        tower_username: "admin"
+        tower_password: "Admin@123"
