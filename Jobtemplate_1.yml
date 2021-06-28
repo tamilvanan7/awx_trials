@@ -12,7 +12,8 @@
         description: "Trial Task for Creating Tower Organization"
         state: present
         tower_host: localhost
-        tower_oauthtoken: <deleted>
+        tower_username: admin
+        tower_password: Admin@123
         validate_certs: false
 
     - name: Task 2
@@ -23,7 +24,8 @@
         email: "tamilvanan7@engineer.com"
         state: present
         tower_host: localhost
-        tower_oauthtoken: <deleted>
+        tower_username: admin
+        tower_password: Admin@123
         validate_certs: false
 
     - name: Task 3
@@ -33,5 +35,6 @@
         role: admin
         state: present
         tower_host: localhost
-        tower_oauthtoken: <deleted>
+        tower_username: admin
+        tower_password: Admin@123
         validate_certs: false
