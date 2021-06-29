@@ -11,10 +11,11 @@
         name: "XYZ"
         description: "Trial Task for Creating Tower Organization"
         state: present
-        tower_host: localhost
-        tower_username: admin
-        tower_password: Admin@123
+        #tower_host: localhost
+        #tower_username: admin
+        #tower_password: Admin@123
         validate_certs: no
+        tower_config_file: "~/.tower_cli.cfg"
 
     - name: Task 2
       tower_user:
