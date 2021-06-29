@@ -14,7 +14,7 @@
         tower_host: localhost
         tower_username: admin
         tower_password: Admin@123
-        validate_certs: false
+        validate_certs: no
 
     - name: Task 2
       tower_user:
@@ -26,7 +26,7 @@
         tower_host: localhost
         tower_username: admin
         tower_password: Admin@123
-        validate_certs: false
+        validate_certs: no
 
     - name: Task 3
       tower_role:
@@ -37,4 +37,4 @@
         tower_host: localhost
         tower_username: admin
         tower_password: Admin@123
-        validate_certs: false
+        validate_certs: no
