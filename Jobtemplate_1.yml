@@ -16,6 +16,7 @@
         tower_password: Admin@123
         validate_certs: no
         tower_config_file: "/home/ubuntu/.tower_cli.cfg"
+        # Location of Tower_config_file in Tower VM
 
     - name: Task 2
       tower_user:
@@ -29,6 +30,7 @@
         tower_password: Admin@123
         validate_certs: no
         tower_config_file: "/home/ubuntu/.tower_cli.cfg"
+        # Location of Tower_config_file in Tower VM
 
     - name: Task 3
       tower_role:
