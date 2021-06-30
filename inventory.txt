@@ -1,0 +1,2 @@
+[webservers]
+144.91.122.182 ansible_ssh_pass=9Pq5nmGFaMCW47g ansible_ssh_user=ubuntu ansible_sudo_pass=9Pq5nmGFaMCW47g
