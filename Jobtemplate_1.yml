@@ -49,11 +49,12 @@
         # validate_certs: no
         # tower_config_file: "/home/ubuntu/.tower_cli.cfg"
 
-    - name: Add tamil user to the member role of "My Team" Team XYZ Organization
+    - name: Add tamil user to the member role of "My Team" Team / XYZ Organization
       tower_role:
         user: tamil
-        organization: "XYZ"
+        # organization: "XYZ"
         target_team: "My Team"
+        # Run for Target Team or Organization. Not Both at the same time
         role: admin
         state: present
         tower_config_file: "/home/ubuntu/.tower_cli.cfg"
