@@ -52,8 +52,8 @@
     - name: Add tamil user to the member role of "My Team" Team XYZ Organization
       tower_role:
         user: tamil
-        # organization: "XYZ"
-        # target_team: "My Team"
+        organization: "XYZ"
+        target_team: "My Team"
         role: admin
         state: present
         tower_config_file: "/home/ubuntu/.tower_cli.cfg"
