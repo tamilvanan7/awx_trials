@@ -49,7 +49,7 @@
         # validate_certs: no
         # tower_config_file: "/home/ubuntu/.tower_cli.cfg"
 
-    - name: Add jdoe to the member role of My Team
+    - name: Add tamil user to the member role of "My Team" Team XYZ Organization
       tower_role:
         user: tamil
         # organization: "XYZ"
