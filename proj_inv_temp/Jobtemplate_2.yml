@@ -1,0 +1,30 @@
+
+- name: 
+  hosts: webservers
+  #connection: local
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name:  Create Template project from another Git Repo
+      tower_project:
+        name: Test Project
+        description: 
+        organization: XYZ
+        scm_clean: True
+        scm_type: git
+        scm_url: "https://github.com/tamilvanan7/awx_trials"
+        state: present
+        tower_host: ansible.cloud.internal
+        tower_config_file: "/home/ubuntu/.tower_cli.cfg"
+        validate_certs: false
+
+    #- name: Add tamil user to the member role of "My Team" Team / XYZ Organization
+    #  tower_role:
+    #    user: tamil
+    #    # organization: "XYZ"
+    #    target_team: "My Team"
+    #    # Run for Target Team or Organization. Not Both at the same time
+    #    role: admin
+    #    state: present
+    #    tower_config_file: "/home/ubuntu/.tower_cli.cfg"
