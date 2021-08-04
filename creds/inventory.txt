@@ -1,0 +1,2 @@
+[webservers]
+144.91.122.182 ansible_ssh_pass=Teamx@123 ansible_ssh_user=centos ansible_sudo_pass=Teamx@123

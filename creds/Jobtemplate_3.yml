@@ -1,0 +1,32 @@
+- name:
+  hosts: webservers
+  #connection: local
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Create Credential for Source Control
+      tower_credential:
+        name: praveen-credential
+        #credential_type: Source Control
+        kind: scm
+        organization: "Default"
+        state: present
+        #inputs:
+        username: praveenramaraj
+        password: berlin9948
+        tower_config_file: "/home/centos/.tower_cli.cfg"
+
+    #- name:  Create Template project from another Git Repo
+    #  tower_project:
+    #    name: Test Project
+    #    description:
+    #    organization: XYZ
+    #    scm_clean: True
+    #    scm_type: git
+    #    scm_url: "https://github.com/tamilvanan7/ansible-tower-awx-trial-github.git"
+    #    credential:
+    #    state: present
+    #    tower_host: ansible.cloud.internal
+    #    tower_config_file: "/home/centos/.tower_cli.cfg"
+    #    validate_certs: false
