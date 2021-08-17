@@ -16,7 +16,7 @@
         scm_url: "https://github.com/tamilvanan7/awx_trials"
         state: present
         tower_host: ansible.cloud.internal
-        tower_config_file: "/home/ubuntu/.tower_cli.cfg"
+        tower_config_file: "/home/centos/.tower_cli.cfg"
         validate_certs: false
 
     #- name: Add tamil user to the member role of "My Team" Team / XYZ Organization

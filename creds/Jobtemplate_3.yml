@@ -9,12 +9,12 @@
       tower_credential:
         name: praveen-credential
         #credential_type: Source Control
-        kind: scm
+        kind: hashivault_kv
         organization: "Default"
-        state: present
+        #state: present
         #inputs:
-        username: praveenramaraj
-        password: berlin9948
+        #username: praveenramaraj
+        #password: berlin9948
         tower_config_file: "/home/centos/.tower_cli.cfg"
 
     #- name:  Create Template project from another Git Repo

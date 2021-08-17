@@ -1,0 +1,23 @@
+- name:
+  hosts: webservers
+  #connection: local
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Task 2
+      tower_user:
+        username: "tamil"
+        first_name: "tamilvanan"
+        last_name: "aabhavanan"
+        email: "tamilvanan7@engineer.com"
+        state: present
+        password: "Praveen@123"
+        # tower_host: localhost
+        tower_username: admin
+        tower_password: Admin@123
+        validate_certs: no
+        tower_config_file: "/home/centos/.tower_cli.cfg"
+      # tags:
+        # - prod
+        # Location of Tower_config_file in Tower VM
