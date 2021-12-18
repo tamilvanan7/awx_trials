@@ -14,7 +14,7 @@
         playbook: "proj_inv_temp/Jobtemplate_2.yml"
         #credential: "praveen-credential"
         state: "present"
-        tower_config_file: "/home/centos/.tamil.cfg"
+        tower_config_file: "/home/centos/.tower_cli.cfg"
         verbosity: 2
         #survey_enabled: yes
         #survey_spec: "{{ lookup('file', 'my_survey.json') }}"
