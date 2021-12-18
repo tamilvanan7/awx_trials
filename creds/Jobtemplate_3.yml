@@ -15,7 +15,7 @@
         #inputs:
         #username: praveenramaraj
         #password: berlin9948
-        tower_config_file: "/home/centos/.tower_cli.cfg"
+        tower_config_file: "/home/centos/tamil.cfg"
 
     #- name:  Create Template project from another Git Repo
     #  tower_project:
